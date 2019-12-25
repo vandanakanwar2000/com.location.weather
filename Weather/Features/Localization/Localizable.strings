@@ -1,0 +1,33 @@
+/* 
+  Localizable.strings
+  Weather
+
+  Created by Vandana Kanwar on 24/12/19.
+  Copyright © 2019 Vandana Kanwar. All rights reserved.
+*/
+
+"imageUrlString"        = "http://openweathermap.org/img/w/%@.png";
+"weatherDetails"        = "Today : %@ today. It's currently %d°C, the high will be %d°C.";
+"temperatureString"     = "%d°C";
+"percentageValue"       = "%d %";
+"pressureUnitValue"     = "%d hPa";
+"humidityString"        = "HUMIDITY";
+"feelsLikeString"       = "FEELS LIKE";
+"pressureString"        = "PRESSURE";
+"sunriseString"         = "SUNRISE";
+"sunsetString"          = "SUNSET";
+"chanceOfRainString"    = "CHANCE OF RAIN";
+"precipitationString"   = "PRECIPITATION";
+"windString"            = "WIND";
+"cmUnitValue"           = "%d cm";
+"windUnitString"        = "%d km/hr";
+"nowString"             = "Now";
+"errorText"             = "Error";
+"initialValue"          = "--";
+"dayNameValue"          = "%@ TODAY";
+"searchPlaceholder"     = "Search Location";
+"alertTitle"            = "Connection Error";
+"alertButtonText"       = "Ok";
+"alertSubtitle"         = "No Internet connection. Please check your network settings.";
+"searchHistoryText"     = "Search History";
+"moreDetails"           = "Further info please visit";
