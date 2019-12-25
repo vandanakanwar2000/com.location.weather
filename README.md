@@ -1,5 +1,4 @@
-# com.location.weather
-Weather App
+# Weather App
 
 The following list of functional requirements is prioritized. Implement as many of these points as you can, given the time you have. Do only as much as your time allows. We favor “quality over quantity”.
  
