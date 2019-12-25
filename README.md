@@ -1,6 +1,4 @@
-# Weather App
-
-The following list of functional requirements is prioritized. Implement as many of these points as you can, given the time you have. Do only as much as your time allows. We favor “quality over quantity”.
+# Weather #Search # GPS #Location
  
 1) Search by city name or zip code
 Implement a search to allow the user to enter a city name or zip code. The result of the search is to display the current weather information for the searched location.
