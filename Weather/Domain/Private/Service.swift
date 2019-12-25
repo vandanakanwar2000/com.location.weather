@@ -40,7 +40,6 @@ typealias ServiceCallback = (ServiceResult) -> Void
 /// Implements common functionality for all service classess.
 class Service {
     func submitRequest(with url: URL, completion: @escaping ServiceCallback) {
-        print(url)
         URLSession.shared.dataTask(with: url) { data, _, error in
             if let error = error {
                 DispatchQueue.main.async {
