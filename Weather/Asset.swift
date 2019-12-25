@@ -17,6 +17,7 @@ public enum Asset: String {
     case iconHamburger = "icon-hamburger"
     case iconAdd = "icon-plus"
     case cityImage = "city"
+    case background
 }
 
 public extension AssetImageTypeAlias {

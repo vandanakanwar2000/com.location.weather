@@ -24,9 +24,10 @@
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="266" placeholderIntrinsicHeight="100" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cpD-Hc-yFb">
                             <rect key="frame" x="10" y="0.0" width="279" height="70"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </stackView>
                     </subviews>
-                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="cpD-Hc-yFb" firstAttribute="top" secondItem="oRI-qS-otj" secondAttribute="top" id="0LM-fB-AmD"/>
                         <constraint firstAttribute="trailing" secondItem="cpD-Hc-yFb" secondAttribute="trailing" constant="10" id="3w4-Nh-1LU"/>
@@ -38,7 +39,7 @@
                     </constraints>
                 </scrollView>
             </subviews>
-            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="oRI-qS-otj" firstAttribute="bottom" secondItem="iEw-KQ-vtq" secondAttribute="bottom" id="1Aa-cF-Jc3"/>
                 <constraint firstItem="oRI-qS-otj" firstAttribute="leading" secondItem="lqe-I9-bXc" secondAttribute="leading" id="Ca0-3x-KvF"/>

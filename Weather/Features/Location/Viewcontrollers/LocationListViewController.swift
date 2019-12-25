@@ -39,7 +39,7 @@ final class LocationListViewController: UITableViewController {
         tableView.register(LocationListTableViewCell.self)
         tableView.estimatedRowHeight = estimatedHeight
         tableView.rowHeight = UITableView.automaticDimension
-        tableView.backgroundColor = .black
+        tableView.backgroundView = UIImageView(image: UIImage(asset: Asset.background))
         let footerView = FooterRow(frame: CGRect(x: 0,
                                                  y: 0,
                                                  width: view.frame.width,
