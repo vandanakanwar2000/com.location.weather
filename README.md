@@ -1,4 +1,4 @@
-# Weather #Search # GPS #Location
+# Weather # Search # GPS # Location
  
 1) Search by city name or zip code
 Implement a search to allow the user to enter a city name or zip code. The result of the search is to display the current weather information for the searched location.
