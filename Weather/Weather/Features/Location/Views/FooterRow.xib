@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FooterRow" customModule="Weather" customModuleProvider="target">
+            <connections>
+                <outlet property="attachmentImage" destination="eGR-iV-scT" id="75J-hP-7Ju"/>
+                <outlet property="containerView" destination="iN0-l3-epB" id="uuH-ic-kZ3"/>
+                <outlet property="iconImage" destination="1Uz-Qw-gxs" id="dkK-P6-hur"/>
+                <outlet property="primaryLabel" destination="17a-kz-bC8" id="igV-Oq-F7l"/>
+                <outlet property="primaryValueContainer" destination="r5f-hz-XaH" id="ZCg-oe-Qaf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="252" height="186"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r5f-hz-XaH">
+                    <rect key="frame" x="8" y="16" width="46" height="154"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" horizontalCompressionResistancePriority="752" verticalCompressionResistancePriority="752" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17a-kz-bC8">
+                            <rect key="frame" x="0.0" y="0.0" width="16" height="154"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="16" id="pa7-eM-GoV"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="253" verticalHuggingPriority="251" horizontalCompressionResistancePriority="753" verticalCompressionResistancePriority="751" image="icon-arrow-right" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eGR-iV-scT">
+                            <rect key="frame" x="22" y="65" width="24" height="24"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="eGR-iV-scT" firstAttribute="centerY" secondItem="r5f-hz-XaH" secondAttribute="centerY" id="HzW-yj-D1y"/>
+                        <constraint firstItem="17a-kz-bC8" firstAttribute="top" secondItem="r5f-hz-XaH" secondAttribute="top" id="RfW-rf-prW"/>
+                        <constraint firstItem="17a-kz-bC8" firstAttribute="leading" secondItem="r5f-hz-XaH" secondAttribute="leading" id="Xd7-kE-zt0"/>
+                        <constraint firstAttribute="trailing" secondItem="eGR-iV-scT" secondAttribute="trailing" id="c5O-C8-voJ"/>
+                        <constraint firstAttribute="bottom" secondItem="17a-kz-bC8" secondAttribute="bottom" id="dZs-a2-huQ"/>
+                        <constraint firstItem="eGR-iV-scT" firstAttribute="leading" secondItem="17a-kz-bC8" secondAttribute="trailing" constant="6" id="fON-Ff-NXN"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="750" constant="30" id="mrg-aZ-MMk"/>
+                    </constraints>
+                </view>
+                <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" placeholderIntrinsicWidth="15" placeholderIntrinsicHeight="22" image="icon-search-red" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Uz-Qw-gxs">
+                    <rect key="frame" x="205" y="82" width="15" height="22"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" none="YES"/>
+                        <bool key="isElement" value="YES"/>
+                    </accessibility>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="dTQ-0U-WyJ" appends="YES" id="c3j-SR-FKW"/>
+                    </connections>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="r5f-hz-XaH" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="5aT-j0-538"/>
+                <constraint firstItem="1Uz-Qw-gxs" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="r5f-hz-XaH" secondAttribute="trailing" constant="16" id="Ba2-YD-a8V"/>
+                <constraint firstItem="1Uz-Qw-gxs" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="DKB-q5-sC7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="r5f-hz-XaH" secondAttribute="bottom" constant="16" id="NWh-J4-kvF"/>
+                <constraint firstItem="r5f-hz-XaH" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="iCS-ru-hwc"/>
+                <constraint firstItem="r5f-hz-XaH" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="r8A-3I-umk"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1Uz-Qw-gxs" secondAttribute="trailing" constant="32" id="yk9-cN-0JH"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-248" y="28.785607196401802"/>
+        </view>
+        <tapGestureRecognizer id="UOE-YB-acS">
+            <connections>
+                <action selector="didTapLabel:" destination="-1" id="WmM-d3-baF"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="dTQ-0U-WyJ">
+            <connections>
+                <action selector="didTapImage:" destination="-1" id="W9C-bp-rHh"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="icon-arrow-right" width="24" height="24"/>
+        <image name="icon-search-red" width="24" height="24"/>
+    </resources>
+</document>

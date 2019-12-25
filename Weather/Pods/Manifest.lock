@@ -1,0 +1,20 @@
+PODS:
+  - ReachabilitySwift (5.0.0)
+  - SwiftFormat/CLI (0.43.1)
+
+DEPENDENCIES:
+  - ReachabilitySwift
+  - SwiftFormat/CLI
+
+SPEC REPOS:
+  trunk:
+    - ReachabilitySwift
+    - SwiftFormat
+
+SPEC CHECKSUMS:
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+  SwiftFormat: e73bae96d000ae07ffb9e3636929ca5e9d5c1efd
+
+PODFILE CHECKSUM: f7e10086752e3f38247e0da58cd16d63a93d6282
+
+COCOAPODS: 1.8.4

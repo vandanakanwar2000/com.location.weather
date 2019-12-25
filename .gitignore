@@ -1,0 +1,9 @@
+xcuserdata
+*.ipa
+*.dSYM.zip
+*.log
+.idea
+report.xml
+DerivedData/*
+.DS_Store
+*.swp
