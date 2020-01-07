@@ -8,22 +8,22 @@
 
 import UIKit
 
-struct DailyForcastResponse: Decodable {
+struct DailyForcastResponse: Codable {
     let list: [DailyForcastList]?
     let city: City?
 }
 
-struct ForcastResponse: Decodable {
+struct ForcastResponse: Codable {
     let list: [CurrentWeather]
     let city: City?
 }
 
-struct Coord: Decodable {
+struct Coord: Codable {
     let lon: Double
     let lat: Double
 }
 
-struct City: Decodable {
+struct City: Codable {
     let name: String?
     let country: String?
     let population: Int?
@@ -37,7 +37,7 @@ struct City: Decodable {
     let timezone: Int?
 }
 
-struct DailyForcastList: Decodable {
+struct DailyForcastList: Codable {
     let dt: Int
     var date: Date {
         return Date(timeIntervalSince1970: TimeInterval(dt))
@@ -54,7 +54,7 @@ struct DailyForcastList: Decodable {
     let clouds: Int?
 }
 
-struct Temperature: Decodable {
+struct Temperature: Codable {
     public var day: Double?
     public var min: Double?
     public var max: Double?
@@ -63,6 +63,6 @@ struct Temperature: Decodable {
     public var morn: Double?
 }
 
-struct Clouds: Decodable {
+struct Clouds: Codable {
     let all: Double?
 }

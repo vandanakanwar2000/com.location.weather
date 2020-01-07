@@ -16,10 +16,10 @@ protocol LocationListDataSource {
 }
 
 class LocationListTableViewCell: UITableViewCell {
-    @IBOutlet var activityIndicator: UIActivityIndicatorView!
-    @IBOutlet var temperatureLabel: UILabel!
-    @IBOutlet var cityNameLabel: UILabel!
-    @IBOutlet var timeLabel: UILabel!
+    @IBOutlet private var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet private var temperatureLabel: UILabel!
+    @IBOutlet private var cityNameLabel: UILabel!
+    @IBOutlet private var timeLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

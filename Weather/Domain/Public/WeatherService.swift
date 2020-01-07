@@ -13,9 +13,10 @@ import UIKit
 /// Weather service protocol.
 protocol WeatherServiceProvider {
     /// Retrieve weather info
-    func getWeatherInfo<T: Decodable>(operation: WeatherActivity,
-                                      type: ActivityType, result: T.Type,
-                                      completion: @escaping (Result<T>) -> Void)
+    func getWeatherInfo<T: Codable>(operation: WeatherActivity,
+                                    type: ActivityType,
+                                    result: T.Type,
+                                    completion: @escaping (Result<T>) -> Void)
 
     func loadImage(iconUrl: URL, completion: @escaping (UIImage?) -> Void?)
 }
@@ -28,33 +29,33 @@ class WeatherService: Service, WeatherServiceProvider {
         urlRequestBuilder = ServiceRequestBuilder(urlBuilder: urlBuilder)
     }
 
-    public func getCurrentWeather<T: Decodable>(city: String,
-                                                country: String? = nil,
-                                                requestType: ActivityType,
-                                                result: T.Type,
-                                                completion: @escaping (Result<T>) -> Void) {
+    func getCurrentWeather<T: Codable>(city: String,
+                                       country: String? = nil,
+                                       requestType: ActivityType,
+                                       result: T.Type,
+                                       completion: @escaping (Result<T>) -> Void) {
         let operation: WeatherActivity = .byCityName(city: city, countryCode: country)
         getWeatherInfo(operation: operation, type: requestType, result: result, completion: completion)
     }
 
-    public func getCurrentWeather<T: Decodable>(at location: CLLocationCoordinate2D,
-                                                requestType: ActivityType,
-                                                result: T.Type,
-                                                completion: @escaping (Result<T>) -> Void) {
+    func getCurrentWeather<T: Codable>(at location: CLLocationCoordinate2D,
+                                       requestType: ActivityType,
+                                       result: T.Type,
+                                       completion: @escaping (Result<T>) -> Void) {
         let operation: WeatherActivity = .byGeographic(lat: location.latitude, lon: location.longitude)
         getWeatherInfo(operation: operation, type: requestType, result: result, completion: completion)
     }
 
-    public func getCurrentWeather<T: Decodable>(for zip: Int,
-                                                country: String? = nil,
-                                                requestType: ActivityType,
-                                                result: T.Type,
-                                                completion: @escaping (Result<T>) -> Void) {
+    func getCurrentWeather<T: Codable>(for zip: Int,
+                                       country: String? = nil,
+                                       requestType: ActivityType,
+                                       result: T.Type,
+                                       completion: @escaping (Result<T>) -> Void) {
         let operation: WeatherActivity = .byZip(zip: zip, countryCode: country)
         getWeatherInfo(operation: operation, type: requestType, result: result, completion: completion)
     }
 
-    func getWeatherInfo<T>(operation: WeatherActivity, type: ActivityType, result: T.Type, completion: @escaping (Result<T>) -> Void) where T: Decodable {
+    func getWeatherInfo<T>(operation: WeatherActivity, type: ActivityType, result: T.Type, completion: @escaping (Result<T>) -> Void) where T: Codable {
         guard let request = urlRequestBuilder?.build(for: operation, type: type),
             let url = request.url
         else {

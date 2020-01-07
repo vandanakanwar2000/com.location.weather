@@ -17,11 +17,11 @@ struct DetailViewViewModel {
 }
 
 class DetailView: UIView {
-    @IBOutlet var containerView: UIView!
-    @IBOutlet var titleLabelPrimary: UILabel!
-    @IBOutlet var detailLabelPrimary: UILabel!
-    @IBOutlet var titleLabelSecondary: UILabel!
-    @IBOutlet var detailLabelSecondary: UILabel!
+    @IBOutlet private var containerView: UIView!
+    @IBOutlet private var titleLabelPrimary: UILabel!
+    @IBOutlet private var detailLabelPrimary: UILabel!
+    @IBOutlet private var titleLabelSecondary: UILabel!
+    @IBOutlet private var detailLabelSecondary: UILabel!
 
     @IBOutlet private var trailingConstraint: NSLayoutConstraint!
     @IBOutlet private var bottomConstraint: NSLayoutConstraint!

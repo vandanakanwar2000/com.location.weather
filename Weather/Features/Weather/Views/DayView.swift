@@ -16,11 +16,11 @@ public protocol DayViewDataSource {
 }
 
 class DayView: UIView {
-    @IBOutlet var containerView: UIView!
-    @IBOutlet var stackView: UIStackView!
-    @IBOutlet var imageView: UIImageView!
-    @IBOutlet var titleLabel: UILabel!
-    @IBOutlet var detailLabel: UILabel!
+    @IBOutlet private var containerView: UIView!
+    @IBOutlet private var stackView: UIStackView!
+    @IBOutlet private var imageView: UIImageView!
+    @IBOutlet private var titleLabel: UILabel!
+    @IBOutlet private var detailLabel: UILabel!
 
     @IBOutlet private var trailingConstraint: NSLayoutConstraint!
     @IBOutlet private var bottomConstraint: NSLayoutConstraint!

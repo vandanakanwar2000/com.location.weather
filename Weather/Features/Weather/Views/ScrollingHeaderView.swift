@@ -9,8 +9,8 @@
 import UIKit
 
 class ScrollingHeaderView: UIView {
-    @IBOutlet var containerView: UIView!
-    @IBOutlet var stackView: UIStackView!
+    @IBOutlet private var containerView: UIView!
+    @IBOutlet private var stackView: UIStackView!
 
     public override init(frame: CGRect) {
         super.init(frame: frame)
